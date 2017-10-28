@@ -3,7 +3,7 @@ import sort.*;
 public class Test {
     public static void main(String[]args){
         //初始化原始数据
-        int LENGTH= 1000000;
+        int LENGTH= 10000000;
         int[] number = new int[LENGTH];
         for(int i =0;i<LENGTH;i++){
             number[i] = (int)(Math.random() * LENGTH);
@@ -55,6 +55,7 @@ public class Test {
 
         number = backup.clone();
         begintime = System.currentTimeMillis();
+
         G_HeapSort.sort(number);
         endtime=System.currentTimeMillis();
         System.out.println("Heap sort" + (endtime-begintime));
