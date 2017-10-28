@@ -1,6 +1,6 @@
 package sort;
 
-public class InsertSort {
+public class C_InsertSort {
     public static void sort(int[]array){
         //把一个元素往已经排好序的子数组里不停插入
         for(int i=1;i<array.length;i++){

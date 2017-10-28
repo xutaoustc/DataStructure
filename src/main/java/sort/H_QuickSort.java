@@ -1,6 +1,6 @@
 package sort;
 
-public class QuickSort {
+public class H_QuickSort {
     public static void sort(int[] array) {
         quickSort(array, 0, array.length - 1);
     }

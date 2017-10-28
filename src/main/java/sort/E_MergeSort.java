@@ -3,7 +3,7 @@ package sort;
 
 //先拆分，然后把两个已经合并好的子数组再合并。
 
-public class MergeSort {
+public class E_MergeSort {
     public static void sort(int[] array){
         int[] tempArray = new int[array.length];
 

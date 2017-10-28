@@ -1,11 +1,12 @@
 package sort;
 
+//一种特殊的插入排序
 
 //先取一个正整数 d1(d1 < n)，把全部记录分成 d1 个组，所有距离为 d1 的倍数的记录看成一组，然后在各组内进行插入排序
 //然后取 d2(d2 < d1)
 //重复上述分组和排序操作；直到取 di = 1(i >= 1) 位置，即所有记录成为一个组，最后对这个组进行插入排序。
 //       一般选 d1 约为 n/2，d2 为 d1 /2， d3 为 d2/2 ，…， di = 1。
-public class ShellSort {
+public class F_ShellSort {
     public static void sort(int[]array){
         int n = array.length;
 

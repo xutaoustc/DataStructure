@@ -1,6 +1,6 @@
 package sort;
 
-public class InsertOptimizeSort {
+public class D_InsertOptimizeSort {
     public static void sort(int[]array){
         for(int i=1;i<array.length;i++){
             int index = getInsertIndex(array,i,array[i]);
