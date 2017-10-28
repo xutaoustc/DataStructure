@@ -3,7 +3,7 @@ import sort.*;
 public class Test {
     public static void main(String[]args){
         //初始化原始数据
-        int LENGTH= 100000;
+        int LENGTH= 1000000;
         int[] number = new int[LENGTH];
         for(int i =0;i<LENGTH;i++){
             number[i] = (int)(Math.random() * LENGTH);
@@ -15,23 +15,23 @@ public class Test {
         backup = number.clone();
 
 
-        number = backup.clone();
-        begintime = System.currentTimeMillis();
-        InsertSort.sort(number);
-        endtime=System.currentTimeMillis();
-        System.out.println("Insert sort" + (endtime-begintime));
+//        number = backup.clone();
+//        begintime = System.currentTimeMillis();
+//        InsertSort.sort(number);
+//        endtime=System.currentTimeMillis();
+//        System.out.println("Insert sort" + (endtime-begintime));
+//
+//        number = backup.clone();
+//        begintime = System.currentTimeMillis();
+//        InsertOptimizeSort.sort(number);
+//        endtime=System.currentTimeMillis();
+//        System.out.println("InsertOptimize sort" + (endtime-begintime));
 
-        number = backup.clone();
-        begintime = System.currentTimeMillis();
-        InsertOptimizeSort.sort(number);
-        endtime=System.currentTimeMillis();
-        System.out.println("InsertOptimize sort" + (endtime-begintime));
-
-        number = backup.clone();
-        begintime = System.currentTimeMillis();
-        BubbleSort.sort(number);
-        endtime=System.currentTimeMillis();
-        System.out.println("Bubble sort" + (endtime-begintime));
+//        number = backup.clone();
+//        begintime = System.currentTimeMillis();
+//        BubbleSort.sort(number);
+//        endtime=System.currentTimeMillis();
+//        System.out.println("Bubble sort" + (endtime-begintime));
 
         number = backup.clone();
         begintime = System.currentTimeMillis();
@@ -39,11 +39,24 @@ public class Test {
         endtime=System.currentTimeMillis();
         System.out.println("Merge sort" + (endtime-begintime));
 
+//        number = backup.clone();
+//        begintime = System.currentTimeMillis();
+//        SelectionSort.sort(number);
+//        endtime=System.currentTimeMillis();
+//        System.out.println("Selection sort" + (endtime-begintime));
+
         number = backup.clone();
         begintime = System.currentTimeMillis();
-        SelectionSort.sort(number);
+        ShellSort.sort(number);
         endtime=System.currentTimeMillis();
-        System.out.println("Selection sort" + (endtime-begintime));
+        System.out.println("Shell sort" + (endtime-begintime));
+
+
+        number = backup.clone();
+        begintime = System.currentTimeMillis();
+        QuickSort.sort(number);
+        endtime=System.currentTimeMillis();
+        System.out.println("Quick sort" + (endtime-begintime));
 
         //int[] number = {1,3,5,7,9,2,4,6,8,10};
 //        InsertOptimizeSort.sort(number);
